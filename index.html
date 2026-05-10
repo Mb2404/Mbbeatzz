@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beatmaker | Premium Beats</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow-x: hidden;
+  background: black;
+}
+
+/* GIF BACKGROUND */
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-image: url("https://i.pinimg.com/originals/63/55/9d/63559de66e40a969a5618b74029bb0b7.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+  z-index: -1;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.5);
+}
+
+nav a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* SECTIONS (TABS) */
+.section {
+  display: none;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section.active {
+  display: flex;
+}
+
+.hero {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ff3c00;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<header>
+  <h1>MB</h1>
+  <nav>
+    <a href="Home
+.html" style="text-decoration:none;">Home</a>
+    <a href="Beats
+.html" style="text-decoration:none;">Beats</a>
+    <a href="Contact
+.html" style="text-decoration:none;">Contact</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="section active">
+  <h2>Premium Beats for Artists</h2>
+  <p>Trap • Drill • Hip-Hop</p>
+  <a class="btn"<a href="Beats
+.html" style="text-decoration:none;" >Listen Now</a>
+</section>
+ 
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: mbyeah2404@gmail.com</p>
+  <p>Instagram: @mb_yeah_</p>
+</section>
+
+<footer>
+  <p>© 2026 Beatmaker</p>
+</footer>
+
+<script>
+function showTab(tab) {
+  document.querySelectorAll('.section').forEach(sec => {
+    sec.classList.remove('active');
+  });
+  document.getElementById(tab).classList.add('active');
+}
+</script>
+
+</body>
+</html>

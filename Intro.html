@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MB | Welcome</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow-x: hidden;
+  background: black;
+}
+
+/* GIF BACKGROUND */
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-image: url("https://i.pinimg.com/originals/63/55/9d/63559de66e40a969a5618b74029bb0b7.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1.05);
+}
+
+/* DARK OVERLAY */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+  z-index: -1;
+}
+
+/* HEADER */
+header {
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.5);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* MAIN SECTION */
+.hero {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* GLASS CONTAINER */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  background: rgba(0,0,0,0.70);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.6);
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  text-align: center;
+  color: #bbb;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+/* TWO COLUMNS */
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #ff3c00;
+}
+
+.card p,
+.card li {
+  color: #ddd;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 35px;
+  background: #ff3c00;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff5a26;
+  transform: scale(1.05);
+}
+
+.button-wrap {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  color: #bbb;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .container h2 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  .card h3 {
+    font-size: 24px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<header>
+  <h1>MB</h1>
+  <nav>
+    <a href="index.html">Intro</a>
+    <a href="Home.html">Home</a>
+    <a href="Beats.html">Beats</a>
+    <a href="Contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>Welcome to MB Beats</h2>
+    <p class="subtitle">
+      Professional Instrumentals for Artists Worldwide
+    </p>
+
+    <div class="columns">
+      <!-- ENGLISH -->
+      <div class="card">
+        <h3>🇺🇸 English</h3>
+        <p>
+          This website is created for artists, rappers, singers, and content creators
+          looking for professional-quality beats.
+        </p>
+        <p>Here you can:</p>
+        <ul>
+          <li>🎵 Listen to premium beats</li>
+          <li>🛒 Purchase licenses</li>
+          <li>📩 Contact the producer directly</li>
+          <li>🔥 Discover Trap, Drill, and Hip-Hop instrumentals</li>
+          <li>🌍 Collaborate with artists worldwide</li>
+        </ul>
+        <p>
+          All beats are professionally mixed and ready for recording.
+        </p>
+      </div>
+
+      <!-- UKRAINIAN -->
+      <div class="card">
+        <h3>🇺🇦 Українською</h3>
+        <p>
+          Цей сайт створений для артистів, реперів, співаків та контент-мейкерів,
+          які шукають професійні біти.
+        </p>
+        <p>Тут ви можете:</p>
+        <ul>
+          <li>🎵 Прослуховувати преміальні біти</li>
+          <li>🛒 Купувати ліцензії</li>
+          <li>📩 Напряму зв’язатися з продюсером</li>
+          <li>🔥 Знайти Trap, Drill та Hip-Hop інструментали</li>
+          <li>🌍 Співпрацювати з артистами з усього світу</li>
+        </ul>
+        <p>
+          Усі біти професійно зведені та готові до запису.
+        </p>
+      </div>
+    </div>
+
+    <div class="button-wrap">
+      <a href="Home.html" class="btn">
+        Enter Website / Перейти на сайт
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 MB Beats. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mb Beats | Premium Beats</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#0a0a0a;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* BACKGROUND */
+.bg{
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:-2;
+  background:url("https://i.pinimg.com/originals/63/55/9d/63559de66e40a969a5618b74029bb0b7.gif") center/cover no-repeat;
+  filter:brightness(0.4);
+}
+
+.overlay{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  z-index:-1;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  backdrop-filter: blur(10px);
+  background:rgba(0,0,0,0.5);
+}
+
+header h1{
+  font-size:20px;
+  letter-spacing:2px;
+}
+
+nav a{
+  margin-left:15px;
+  color:#aaa;
+  text-decoration:none;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:white;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:80px 20px 40px;
+}
+
+.hero h2{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  color:#aaa;
+}
+
+/* BEATS GRID */
+.container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  gap:20px;
+  padding:40px;
+  max-width:1000px;
+  margin:auto;
+}
+
+/* CARD */
+.beat{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:12px;
+  padding:20px;
+  transition:0.3s;
+}
+
+.beat:hover{
+  transform:translateY(-5px);
+  background:rgba(255,255,255,0.08);
+}
+
+.beat h3{
+  margin-bottom:10px;
+}
+
+audio{
+  width:100%;
+}
+
+/* BUTTON */
+.btn{
+  margin-top:10px;
+  width:100%;
+  padding:10px;
+  border:none;
+  background:#ff3c00;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#ff5a1f;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  color:#777;
+  font-size:12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<header>
+  <h1>MB BEATS</h1>
+  <nav>
+    <a href="Intro
+.html" style="text-decoration:none;">Intro</a>
+    <a href="Home.html">Home</a>
+    <a href="Beats.html">Beats</a>
+    <a href="Contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Beats</h2>
+</section>
+
+<section class="container" id="beats">
+
+  <div class="beat">
+    <h3>MAMA GO</h3>
+    <audio controls>
+      <source src="MAMA GO.mp3">
+    </audio>
+    <button class="btn" onclick="openBeat('mama-go.mp3','MAMA GO')">
+    <a class="btn"<a href="License
+.html" style="text-decoration:none;" >Buy License</a>
+    </button>
+  </div>
+
+  <div class="beat">
+    <h3>WORK UP</h3>
+    <audio controls>
+      <source src="work up.mp3">
+    </audio>
+    <button class="btn" onclick="openBeat('work-up.mp3','WORK UP')">
+     <a class="btn"<a href="License
+.html" style="text-decoration:none;" >Buy License</a>
+    </button>
+  </div>
+
+  <div class="beat">
+    <h3>X</h3>
+    <audio controls>
+      <source src="X.mp3">
+    </audio>
+    <button class="btn" onclick="openBeat('x.mp3','X')">
+      <a class="btn"<a href="License
+.html" style="text-decoration:none;" >Buy License</a>
+    </button>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 MB Beats • All rights reserved
+</footer>
+
+<script>
+function openBeat(file,name){
+  localStorage.setItem("beat",file);
+  localStorage.setItem("name",name);
+  window.location.href="buy.html";
+}
+</script>
+
+</body>
+</html>
